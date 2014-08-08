@@ -1,4 +1,6 @@
-# First python project
+#!/usr/bin/env python
+# Gisting library
+
 import requests
 import json
 import os
@@ -34,9 +36,9 @@ call(["nano", gistfile])
 gistData = getGistfile()
 
 # read line
-desc = raw_input('Please enter a description for this gist: ')
+desc = raw_input('  Please enter a description for this gist: ')
 
-print('Uploaded to ' + uploadGist(desc, gistData))
+print('  Uploaded to ' + uploadGist(desc, gistData))
 
 # clean up
 os.remove(gistfile)
